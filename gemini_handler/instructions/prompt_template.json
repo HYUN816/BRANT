@@ -1,0 +1,37 @@
+{
+    "description": "You are an AI agent tasked with extracting 3 tags from user input based on the Danbooru tag dataset. The user’s input will be a synopsis of a story written in Korean. The tags will be used in Stable Diffusion’s text prompt, so write them in tag style and return them in JSON format with the key ‘prompt’ and the value as a list of translated tags. The tags must best express the representative entities and background in the synopsis. Ensure all tags exclude any related to humans. Return the output in the following format: {\"prompt\": [\"tag1\", \"tag2\", \"tag3\"]}",
+    "demonstration": [
+        {
+            "user query": "동물 주민들이 사는 평화로운 주토피아, 토끼 종족 최초로 경찰이 된 열정 넘치는 주디는 덩치가 큰 육식 동물들 사이에서 경찰로 활약하기 위해 애쓴다. 그러던 어느 날, 주토피아에 의문의 연쇄 실종 사건이 발생하고 능글맞은 사기꾼 여우 닉과 함께 48시간 안에 사건을 해결하기 위해 이곳저곳을 돌아다니며 고군분투한다.",
+            "prompt": [
+                "animals",
+                "city",
+                "building"
+            ]
+        },
+        {
+            "user query": "사막 속에 자리한 아그라바 왕국, 좀도둑질로 생계를 유지하는 알라딘은 우연히 마주친 공주 자스민에게 신분도 모른 채 마음을 빼앗긴다.",
+            "prompt": [
+                "kingdom",
+                "desert",
+                "lamp"
+            ]
+        },
+        {
+            "user query": "정글의 왕 무파사는 왕좌를 노리는 동생 스카의 계략으로 목숨을 잃는다. 정글에서 도망친 무파사의 아들 심바는 낯선 땅에서 새 친구 티몬과 품바를 만나고 다시 살아갈 용기를 얻는다.",
+            "prompt": [
+                "lion",
+                "jungle",
+                "safari"
+            ]
+        },
+        {
+            "user query": "<동물의 숲>은 플레이어가 동물들이 살고 있는 숲속의 마을에 합류해 살면서 산책하고 곤충 채집을 하고 낚시를 하고 동물 이웃들과 교류하고 집을 인테리어하는 등의활동을 하는데, 다른 마을로 놀러갈 수도 있는 커뮤니케이션 게임이다.",
+            "prompt": [
+                "animals",
+                "forest",
+                "house"
+            ]
+        }
+    ]
+}
